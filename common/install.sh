@@ -30,6 +30,10 @@ jetbrains_mono() {
 	FONT_NAME="JetBrainsMono"
 	FONT_URL=https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono%5Bwght%5D.ttf
 }
+proto_0x() {
+	FONT_NAME="0xProto"
+	FONT_URL=https://github.com/0xType/0xProto/raw/main/fonts/0xProto.ttf
+}
 noto_color_emoji() {
 	FONT_NAME="NotoColorEmoji"
 	FONT_URL=https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf
@@ -37,6 +41,10 @@ noto_color_emoji() {
 twemoji() {
 	FONT_NAME="Twemoji"
 	FONT_URL=https://github.com/Magisk-Modules-Alt-Repo/open_fonts/raw/develop/sources/twemoji/Twemoji.ttf
+}
+openmoji() {
+	FONT_NAME="OpenMoji"
+	FONT_URL=https://github.com/googlei18n/color-emoji/raw/main/fonts/NotoColorEmoji.ttf
 }
 download_file() {
 	STATUS = 0
@@ -148,7 +156,7 @@ ui_print "- Do you want to replace system font?"
 ui_print "  [Vol+ = yes, Vol- = no]"
 if chooseport 30; then
 	ui_print "    Choose between:"
-	ui_print "      NotoSans, OpenSans, Roboto-Flex"
+	ui_print "      NotoSans, OpenSans, Roboto-Flex, 0xProto"
 	sleep 3
 	ui_print ""
 	ui_print "    Select:"
@@ -168,6 +176,13 @@ if chooseport 30; then
 		ui_print "    -> Roboto-Flex [Vol+ = yes, Vol- = no]"
 		if chooseport 3; then
 			robot_flex
+			NEXT_SELECTION=0
+		fi
+	fi
+	if [ "${NEXT_SELECTION}" -eq 1 ]; then
+		ui_print "    -> 0xProto [Vol+ = yes, Vol- = no]"
+		if chooseport 3; then
+			proto_0x
 		else
 			SKIP_INSTALLATION=1
 		fi
@@ -205,7 +220,7 @@ ui_print "- Do you want to replace monospaced font?"
 ui_print "  [Vol+ = yes, Vol- = no]"
 if chooseport 30; then
 	ui_print "    Choose between:"
-	ui_print "      NotoSans Mono, JetBrains Mono"
+	ui_print "      NotoSans Mono, JetBrains Mono, 0xProto"
 	sleep 3
 	ui_print ""
 	ui_print "    Select:"
@@ -218,6 +233,13 @@ if chooseport 30; then
 		ui_print "    -> JetBrainsMono [Vol+ = yes, Vol- = no]"
 		if chooseport 3; then
 			jetbrains_mono
+			NEXT_SELECTION=0
+		fi
+	fi
+	if [ "${NEXT_SELECTION}" -eq 1 ]; then
+		ui_print "    -> 0xProto [Vol+ = yes, Vol- = no]"
+		if chooseport 3; then
+			proto_0x
 		else
 			SKIP_INSTALLATION=1
 		fi
@@ -241,7 +263,7 @@ ui_print "- Do you want to replace system emoji?"
 ui_print "  [Vol+ = yes, Vol- = no]"
 if chooseport 30; then
 	ui_print "    Choose between:"
-	ui_print "      NotoColorEmoji, Twemoji"
+	ui_print "      NotoColorEmoji, Twemoji, OpenMoji"
 	sleep 3
 	ui_print ""
 	ui_print "    Select:"
@@ -254,6 +276,13 @@ if chooseport 30; then
 		ui_print "    -> Twemoji [Vol+ = yes, Vol- = no]"
 		if chooseport 3; then
 			twemoji
+			NEXT_SELECTION=0
+		fi
+	fi
+	if [ "${NEXT_SELECTION}" -eq 1 ]; then
+		ui_print "    -> OpenMoji [Vol+ = yes, Vol- = no]"
+		if chooseport 3; then
+			openmoji
 		else
 			SKIP_INSTALLATION=1
 		fi

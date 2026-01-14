@@ -1,4 +1,11 @@
-**If you found this helpful, please consider supporting development with a [coffe](https://www.paypal.me/f3ff0). Alternatively, you can contribute to the project by reporting bugs and doing PR. All support is appreciated!**
+**You can contribute to the project by reporting bugs and opening PRs. All support is appreciated!**
+
+# v3.2.0
+
+- Added 0xProto font for system and monospaced options
+- Added OpenMoji emoji font option
+- Added GitHub Actions workflow for automated builds and releases
+- Updated module version and structure
 
 # v3.1.1
 

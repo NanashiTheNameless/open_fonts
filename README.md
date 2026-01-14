@@ -1,6 +1,8 @@
-# Open Fonts - [XDA Thread](https://forum.xda-developers.com/t/magisk-module-font-open-fonts.4446663/)
+# Open Fonts - UNOFFICIAL
 
-![Open Font](https://raw.githubusercontent.com/F3FFO/Open-Fonts/master/img/logo.png)
+**See <https://github.com/Magisk-Modules-Alt-Repo/open_fonts> for the OFFICIAL version**
+
+![Open Font](<https://raw.githubusercontent.com/NanashiTheNameless/Open-Fonts/master/img/logo.png>)
 
 This module helps you to replace your system fonts though Magisk.
 
@@ -8,7 +10,7 @@ This module helps you to replace your system fonts though Magisk.
 
 ### About Twemoji
 
-I extracted the font from the arch linux user repository because it is already in the [CBDT](https://learn.microsoft.com/en-us/typography/opentype/spec/cbdt)/[CBLC](https://learn.microsoft.com/en-us/typography/opentype/spec/cblc) standard.
+I extracted the font from the arch linux user repository because it is already in the [CBDT](<https://learn.microsoft.com/en-us/typography/opentype/spec/cbdt>)/[CBLC](<https://learn.microsoft.com/en-us/typography/opentype/spec/cblc>) standard.
 
 ## Compatibility
 
@@ -26,7 +28,7 @@ I extracted the font from the arch linux user repository because it is already i
 
 ## Support
 
-If you found this helpful, please consider supporting development with a [coffe](https://www.paypal.me/f3ff0). Alternatively, you can contribute to the project by reporting bugs and doing PR. All support is appreciated!
+You can contribute to the project by reporting bugs and opening PRs. All support is appreciated!
 
 ## Features
 
@@ -37,10 +39,13 @@ If you found this helpful, please consider supporting development with a [coffe]
   1. [Noto Sans](https://github.com/googlefonts/noto-fonts)
   2. [OpenSans](https://github.com/googlefonts/opensans)
   3. [Roboto-Flex](https://github.com/googlefonts/roboto-flex)
-  4. [NotoSans Mono](https://github.com/googlefonts/noto-fonts)
-  5. [JetBrains Mono](https://github.com/googlefonts/noto-fonts)
-  6. [Noto Emoji](https://github.com/googlefonts/noto-emoji)
-  7. [Twemoji](https://github.com/twitter/twemoji)
+  4. [0xProto](https://github.com/0xType/0xProto)
+  5. [NotoSans Mono](https://github.com/googlefonts/noto-fonts)
+  6. [JetBrains Mono](https://github.com/googlefonts/noto-fonts)
+  7. [0xProto](https://github.com/0xType/0xProto)
+  8. [Noto Emoji](https://github.com/googlefonts/noto-emoji)
+  9. [Twemoji](https://github.com/twitter/twemoji)
+  10. [OpenMoji](https://github.com/hfg-gmuend/openmoji)
 
 ## Credits
 
@@ -52,22 +57,32 @@ If you found this helpful, please consider supporting development with a [coffe]
 - [OpenSans](https://github.com/googlefonts/opensans)
 - [Roboto-Flex](https://github.com/googlefonts/roboto-flex)
 - [JetBrains Mono](https://github.com/googlefonts/noto-fonts)
+- [0xProto](https://github.com/0xType/0xProto)
 - [Noto Emoji](https://github.com/googlefonts/noto-emoji)
 - [Twemoji](https://github.com/twitter/twemoji)
 
 ## License
 
+Copyright 2026 NanashiTheNameless
 Copyright 2022 F3FFO
 
-The source code is available under [GPL-3.0](https://github.com/Magisk-Modules-Alt-Repo/open_fonts/blob/master/LICENSE)
+The source code is available under [GPL-3.0](https://github.com/NanashiTheNameless/open_fonts/blob/master/LICENSE)
 
 - Noto Sans/NotoSans Mono are available under the [SIL Open Font License v1.1](https://github.com/notofonts/noto-fonts/blob/main/LICENSE)
 - Roboto-Flex is available under the [SIL Open Font License v1.1](https://github.com/googlefonts/roboto-flex/blob/main/OFL.txt)
 - JetBrainsMono is available under the [SIL Open Font License v1.1](https://github.com/JetBrains/JetBrainsMono/blob/master/OFL.txt)
+- 0xProto is available under the [SIL Open Font License v1.1](https://github.com/0xType/0xProto/blob/main/OFL.txt)
 - Noto Emoji is available under the [SIL Open Font License v1.1](https://github.com/googlefonts/noto-emoji/blob/main/fonts/LICENSE)
 - Twemoji is available under the [CC-BY 4.0](https://github.com/twitter/twemoji/blob/master/LICENSE-GRAPHICS)
+- OpenMoji is available under the [CC-BY 4.0](https://github.com/hfg-gmuend/openmoji/blob/master/LICENSE.txt)
 
 ## Change logs
+
+# v3.2.0
+
+- Added 0xProto font for system and monospaced options
+- Added OpenMoji emoji font option
+- Added GitHub Actions workflow for automated builds and releases
 
 # v3.1.1
 
