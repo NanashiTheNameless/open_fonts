@@ -1,8 +1,8 @@
-# Open Fonts - UNOFFICIAL
+# Open Fonts - **UNOFFICIAL**
 
 **See <https://github.com/Magisk-Modules-Alt-Repo/open_fonts> for the OFFICIAL version**
 
-![Open Font](<https://raw.githubusercontent.com/NanashiTheNameless/open_fonts/master/img/logo.png>)
+![Open Font UNOFFICIAL](<https://raw.githubusercontent.com/NanashiTheNameless/open_fonts/master/img/logo.png>)
 
 This module helps you to replace your system fonts though Magisk.
 
