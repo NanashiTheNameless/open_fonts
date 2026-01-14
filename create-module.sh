@@ -1,5 +1,5 @@
 #!/bin/bash
-MODULE_NAME=open-fonts.zip
+MODULE_NAME=open_fonts.zip
 
 echo "deleting old files..."
 rm -rf $MODULE_NAME
