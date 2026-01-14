@@ -37,7 +37,7 @@ jobs:
             -x "*.git*" "*.github*" "*.DS_Store"
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v6
         with:
           name: open_fonts-nightly-${{ steps.version.outputs.build_date }}
           path: open_fonts-${{ steps.version.outputs.version }}-nightly-${{ steps.version.outputs.build_date }}.zip
