@@ -1,5 +1,15 @@
 **You can contribute to the project by reporting bugs and opening PRs. All support is appreciated!**
 
+# v3.2.2
+
+- Fixed APatch compatibility by including customize.sh in module builds
+- Fixed selection system logic for monospaced and emoji font selections
+- Fixed syntax error in download_file function (STATUS = 0 → STATUS=0)
+- Added workflow permissions for enhanced security
+- Improved error handling - installation continues on download failures instead of exiting
+- Updated build scripts to match original create-module.sh behavior
+- Removed unused create-module.sh
+
 # v3.2.1
 
 - Fix typos

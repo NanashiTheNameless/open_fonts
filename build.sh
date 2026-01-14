@@ -9,14 +9,17 @@ echo "Building Open Fonts v$VERSION..."
 
 # Create the zip file
 zip -r open_fonts-${VERSION}.zip \
+    customize.sh \
+    module.prop \
+    LICENSE \
+    update.json \
+    uninstall.sh \
     common/ \
     META-INF/ \
     system/ \
-    module.prop \
-    README.md \
-    LICENSE \
-    CHANGELOG.md \
-    -x "*.git*" "*.github*" "*.DS_Store"
+    -x "*.git*" "*.github*" "*.DS_Store" "*.md" \
+       "common/tools/tools/*" "img/*" "sources/*" \
+       "create-module.sh" "build.sh"
 
 if [ $? -eq 0 ]; then
     echo "✓ Module built successfully: open_fonts-${VERSION}.zip"
