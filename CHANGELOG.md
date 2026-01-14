@@ -1,5 +1,10 @@
 **You can contribute to the project by reporting bugs and opening PRs. All support is appreciated!**
 
+# v3.2.1
+
+- Fix typos
+- Optimize images
+
 # v3.2.0
 
 - Added 0xProto font for system and monospaced options
@@ -43,7 +48,7 @@
 
 # v1.1.3
 
-- Optimizated installation script
+- Optimizated installation script <!-- Typo is from F3FFO and should not be removed -->
 - Bug fix
 
 # v1.1.2

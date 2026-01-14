@@ -1,5 +1,5 @@
 #!/system/bin/sh
-MANUFACTER=$(getprop ro.product.manufacturer)
+MANUFACTURER=$(getprop ro.product.manufacturer)
 STANDARD_FOLDER="$MODPATH"/system/fonts
 STATUS=0
 SKIP_INSTALLATION=0
@@ -93,7 +93,7 @@ install_font() {
 install_clock_font() {
 	ln -s ./"$STANDARD_FONT_NAME" $STANDARD_FOLDER/AndroidClock.ttf
 
-	if [ $MANUFACTER = "Samsung" ]; then
+	if [ $MANUFACTURER = "Samsung" ]; then
 		ln -s ./"$STANDARD_FONT_NAME" $STANDARD_FOLDER/SECNum-3L.ttf
 		ln -s ./"$STANDARD_FONT_NAME" $STANDARD_FOLDER/SECNum-3R.ttf
 		ln -s ./"$STANDARD_FONT_NAME" $STANDARD_FOLDER/Clock2019L-RM.ttf
@@ -127,11 +127,11 @@ install_emoji_font() {
 		ln -s ./"$STANDARD_FONT_NAME" $STANDARD_FOLDER/NotoColorEmojiFlags.ttf
 	fi
 
-	if [ $MANUFACTER = "Samsung" ]; then
+	if [ $MANUFACTURER = "Samsung" ]; then
 		ln -s ./"$STANDARD_FONT_NAME" $STANDARD_FOLDER/SamsungColorEmoji.ttf
-	elif [ $MANUFACTER = "LGE" ]; then
+	elif [ $MANUFACTURER = "LGE" ]; then
 		ln -s ./"$STANDARD_FONT_NAME" $STANDARD_FOLDER/LGNotoColorEmoji.ttf
-	elif [ $MANUFACTER = "HTC" ]; then
+	elif [ $MANUFACTURER = "HTC" ]; then
 		ln -s ./"$STANDARD_FONT_NAME" $STANDARD_FOLDER/HTC_ColorEmoji.ttf
 	fi
 	ui_print "  Fonts replaced!"
@@ -139,7 +139,7 @@ install_emoji_font() {
 check_status() {
 	if [ "${STATUS}" -eq 0 ]; then
 		ui_print ""
-		ui_print "  !!! Dowload failed !!!"
+		ui_print "  !!! Download failed !!!"
 		ui_print ""
 		exit 1
 	fi
