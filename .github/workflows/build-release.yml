@@ -12,7 +12,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
@@ -54,9 +54,9 @@ jobs:
           body: |
             **Version:** ${{ steps.version.outputs.version }}
             **Version Code:** ${{ steps.version.outputs.version_code }}
-            
+
             Open Fonts Module
-            See CHANGELOG.md for details.
+            See [CHANGELOG.md](<https://github.com/NanashiTheNameless/open_fonts/blob/master/CHANGELOG.md>) for details.
           draft: false
           prerelease: false
         env:

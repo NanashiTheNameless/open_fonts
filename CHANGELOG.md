@@ -1,5 +1,9 @@
 **You can contribute to the project by reporting bugs and opening PRs. All support is appreciated!**
 
+# v3.2.3
+
+- Fix bugs
+
 # v3.2.2
 
 - Fixed APatch compatibility by including customize.sh in module builds

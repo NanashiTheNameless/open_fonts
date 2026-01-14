@@ -1,8 +1,8 @@
 id=open_fonts
 name=Open Fonts
-version=3.2.2
-versionCode=322
-author=NanashiTheNameless/F3FFO
+version=3.2.3
+versionCode=323
+author=NanashiTheNameless & F3FFO
 description=Open Fonts change your system fonts
 minMagisk=20400
 updateJson=https://raw.githubusercontent.com/NanashiTheNameless/open_fonts/master/update.json
